@@ -1,0 +1,12 @@
+/* resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lazy.loaded {
+    @apply opacity-100;
+}
+
+[x-cloak] {
+    display: none !important;
+}
