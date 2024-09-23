@@ -17,7 +17,7 @@
     <section class="bg-gray-50 dark:bg-gray-700 py-12 sm:py-20 lg:py-24">
         <!-- Conatiner -->
         <div
-          class="ms-auto max-w-xl px-4 sm:px-12 md:max-w-3xl lg:max-w-screen-xl lg:px-8"
+          class="mx-auto max-w-xl px-4 sm:px-12 md:max-w-3xl lg:max-w-screen-xl lg:px-8"
         >
           <div
             class="flex w-full flex-col items-center md:flex-row md:justify-between"
@@ -82,7 +82,7 @@
 
       <!-- Primary Feed -->
       <section
-        class="relative ms-auto max-w-xl px-5 py-12 sm:px-12 sm:py-16 md:max-w-3xl lg:max-w-screen-xl lg:px-8 lg:py-20"
+        class="relative mx-auto max-w-xl px-5 py-12 sm:px-12 sm:py-16 md:max-w-3xl lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
         <div class="w-full lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12">
           <!-- Articles -->
@@ -94,7 +94,7 @@
 
           <!-- Sidebar -->
           <div
-            class="ms-auto mt-12 w-full max-w-xl sm:mt-16 md:max-w-3xl lg:col-span-1 lg:mt-0 lg:max-w-none"
+            class="mx-auto mt-12 w-full max-w-xl sm:mt-16 md:max-w-3xl lg:col-span-1 lg:mt-0 lg:max-w-none"
           >
             <!-- Most read articles -->
             <div class="w-full rounded-2xl bg-gray-50 dark:bg-gray-800 p-5 sm:p-8">

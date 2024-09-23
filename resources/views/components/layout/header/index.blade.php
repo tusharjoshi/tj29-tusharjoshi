@@ -3,7 +3,7 @@
     x-data="{ mobileMenuOpen: false }"
   >
     <nav
-      class="mx-auto flex h-20 max-w-7xl items-center px-4 sm:px-6 lg:px-8"
+      class="mx-auto flex h-20 max-w-7xl items-center ps-4 sm:ps-6 lg:ps-8"
     >
       <!-- Main navbar for large screens -->
       <div class="flex w-full items-center justify-between">
@@ -13,18 +13,18 @@
             <x-icons.logo />
           </a>
           <a href="{{ url('/') }}" class="hidden lg:block">
-            <span class="text-4xl text-gray-700 dark:text-gray-100 hidden lg:block ml-2 rtl:mr-2">{{ __(config('info.sitename'))}}</span>
+            <span class="text-4xl text-gray-700 dark:text-gray-100 hidden lg:block ms-2">{{ __(config('info.sitename'))}}</span>
           </a>
         </div>
 
         <!-- Navigation for large screens -->
         <div
-          class="ms-6 hidden items-center justify-between text-xl md:flex md:space-x-0.5 md:text-base lg:space-x-2"
+          class="ms-6 hidden items-center justify-between text-xl md:flex md:space-s-0.5 md:text-base lg:space-s-2"
         >
             @foreach (config('info.navlinks') as $navLink)
                 <a
                     href="{{ url($navLink['url']) }}"
-                    class="px-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
+                    class="ps-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
                 >
                     {{ __($navLink['name']) }}
                 </a>
@@ -35,7 +35,7 @@
             <!-- Pages dropdown button -->
             <button
               type="button"
-              class="group flex items-center px-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
+              class="group flex items-center ps-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
               @click="open = true"
             >
               <span :class="{'text-red-700 dark:text-red-200': open}">{{ __('Pages') }}</span>
@@ -53,7 +53,7 @@
                 @foreach (config('info.pagelinks') as $pageLink)
                     <a
                         href="{{ url($pageLink['url']) }}"
-                        class="block rounded-lg px-5 py-3.5 font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 hover:text-red-700 dark:hover:text-red-200"
+                        class="block rounded-lg ps-5 py-3.5 font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 hover:text-red-700 dark:hover:text-red-200"
                     >
                         {{ __($pageLink['name']) }}
                     </a>
@@ -65,15 +65,15 @@
           <x-language-switcher />
         </div>
 
-        <div class="flex px-0 items-center">
-            <div class="md:hidden flex items-center space-x-2">
+        <div class="flex ps-0 items-center">
+            <div class="md:hidden flex items-center space-s-2">
                 <x-theme-toggle />
                 <x-language-switcher />
             </div>
 
         <!-- Hamburger menu button -->
         <button
-          class="group relative ml-2 flex cursor-pointer items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-700 p-3 transition duration-300 ease-in-out hover:bg-gray-100 focus:outline-none md:hidden"
+          class="group relative ms-2 flex cursor-pointer items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-700 p-3 transition duration-300 ease-in-out hover:bg-gray-100 focus:outline-none md:hidden"
           aria-label="Toggle Navigation"
           @click="mobileMenuOpen = !mobileMenuOpen"
         >
@@ -110,26 +110,26 @@
       x-show="mobileMenuOpen"
       @keydown.escape.window="mobileMenuOpen = false"
     >
-      <div class="space-y-1 px-2 pb-3 pt-2">
+      <div class="space-y-1 ps-2 pb-3 pt-2">
         @foreach (config('info.navlinks') as $navLink)
             <a
                 href="{{ url($navLink['url']) }}"
-                class="block rounded-lg bg-gray-50 dark:bg-gray-700 px-4 py-3 font-medium text-red-700 dark:text-red-300"
+                class="block rounded-lg bg-gray-50 dark:bg-gray-700 ps-4 py-3 font-medium text-red-700 dark:text-red-300"
                 aria-current="page"
             >{{ __($navLink['name']) }}</a>
         @endforeach
       </div>
       <div class="border-t border-gray-300/70 dark:border-gray-100/70 pb-3 pt-4">
         <div
-          class="mt-2 px-6 text-xs font-medium uppercase tracking-widest text-gray-500"
+          class="mt-2 ps-6 text-xs font-medium uppercase tracking-widest text-gray-500"
         >
           {{ __('Pages') }}
         </div>
-        <div class="mt-3 space-y-1 px-2">
+        <div class="mt-3 space-y-1 ps-2">
             @foreach (config('info.pagelinks') as $pageLink)
             <a
                 href="{{ url($pageLink['url']) }}"
-                class="block rounded-lg px-4 py-2 font-medium text-gray-600 dark:text-gray-200  transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 hover:text-red-700"
+                class="block rounded-lg ps-4 py-2 font-medium text-gray-600 dark:text-gray-200  transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 hover:text-red-700"
             >
                 {{ __($pageLink['name']) }}
             </a>
