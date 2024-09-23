@@ -10,3 +10,20 @@
 [x-cloak] {
     display: none !important;
 }
+
+/*
+    tailwindcss does not have styling for right-to-left select chevron placement
+    this custom style fixes that until it is available out of the box
+    https://github.com/tailwindlabs/tailwindcss-forms/issues/86
+*/
+@layer base {
+    :where([dir="rtl"]) select {
+        background-position: left theme('spacing.2') center;
+        padding-left: theme('spacing.10');
+        padding-right: theme('spacing.3');
+    }
+}
+
+*[dir='rtl'] {
+    @apply font-noto !important;
+  }

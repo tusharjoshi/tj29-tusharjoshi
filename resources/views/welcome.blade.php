@@ -70,7 +70,7 @@
           </article>
 
           <!-- Recent Articles-->
-          <div class="mt-12 sm:mt-16 lg:ml-12 lg:mt-0 lg:w-1/2 xl:ml-16">
+          <div class="mt-12 sm:mt-16 lg:ms-12 lg:mt-0 lg:w-1/2 xl:ms-16">
             <h3
               class="relative border-b border-gray-300/70 pb-2.5 text-2xl font-medium text-gray-900 dark:text-gray-100 before:absolute before:-bottom-px before:left-0 before:h-px before:w-24 before:bg-red-600 dark:before:bg-red-200 before:content-['']"
             >

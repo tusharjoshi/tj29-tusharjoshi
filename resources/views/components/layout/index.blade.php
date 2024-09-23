@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-cloak x-data="{darkMode: $persist(false)}" :class="{'dark': darkMode === true }" >
+<html
+    lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+    x-cloak
+    x-data="{darkMode: $persist(false)}"
+    :class="{'dark': darkMode === true }"
+    dir="{{(App::isLocale('ur') ? 'rtl' : 'ltr')}}"
+    >
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +15,9 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
 
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">

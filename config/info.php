@@ -136,6 +136,11 @@ return [
             'path' => '/tag',
             'view' => 'tag',
         ],
+        [
+            'name' => 'tushar',
+            'path' => '/tushar',
+            'view' => 'tushar',
+        ],
     ],
     'articles' => [
         [

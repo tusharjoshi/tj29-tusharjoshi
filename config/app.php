@@ -126,6 +126,7 @@ return [
     'languages' => [
         'en',
         'mr',
+        'ur',
     ],
 
 ];

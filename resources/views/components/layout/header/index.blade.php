@@ -13,13 +13,13 @@
             <x-icons.logo />
           </a>
           <a href="{{ url('/') }}" class="hidden lg:block">
-            <span class="text-4xl text-gray-700 dark:text-gray-100 hidden lg:block ml-2">{{ __(config('info.sitename'))}}</span>
+            <span class="text-4xl text-gray-700 dark:text-gray-100 hidden lg:block ml-2 rtl:mr-2">{{ __(config('info.sitename'))}}</span>
           </a>
         </div>
 
         <!-- Navigation for large screens -->
         <div
-          class="ml-6 hidden items-center justify-between text-xl md:flex md:space-x-0.5 md:text-base lg:space-x-2"
+          class="ms-6 hidden items-center justify-between text-xl md:flex md:space-x-0.5 md:text-base lg:space-x-2"
         >
             @foreach (config('info.navlinks') as $navLink)
                 <a

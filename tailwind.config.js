@@ -2,6 +2,7 @@
 import typography from '@tailwindcss/typography';
 import forms from '@tailwindcss/forms';
 import aspectRatio from '@tailwindcss/aspect-ratio';
+import tailwindcssRtl from 'tailwindcss-rtl';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,6 +15,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],
+                noto: ["Noto Nastaliq Urdu", "serif"],
             },
 
             fontSize: {
@@ -68,5 +70,6 @@ export default {
         typography,
         forms,
         aspectRatio,
+        tailwindcssRtl,
     ],
 }
