@@ -15,7 +15,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],
-                noto: ["Noto Nastaliq Urdu", "serif"],
+                noto: ["Noto Nastaliq Urdu", "sans-serif"],
             },
 
             fontSize: {

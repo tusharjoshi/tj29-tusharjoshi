@@ -18,7 +18,7 @@
       class="relative mt-6 flex flex-col flex-wrap md:col-span-3 md:mt-0"
     >
       <div
-        class="mb-8 box-border flex w-full flex-1 flex-col justify-between border-b-2 border-gray-100 px-6 pb-8 md:px-0"
+        class="mb-8 box-border flex w-full flex-1 flex-col justify-between border-b-2 border-gray-100 ps-6 pb-8 md:ps-0"
       >
         <div>
           <a
@@ -48,11 +48,11 @@
         <footer class="flex items-center sm:mt-2">
           <div class="flex items-center text-sm lg:text-[15px]">
             <x-icons.calendar />
-            <span class="ml-1 text-gray-500">Nov 2, 2020</span>
+            <span class="ms-1 text-gray-500">Nov 2, 2020</span>
 
             <span class="hidden items-center sm:flex">
               <x-icons.clock />
-              <span class="ml-1 text-gray-500">15 min read</span>
+              <span class="ms-1 text-gray-500">15 min read</span>
             </span>
           </div>
         </footer>

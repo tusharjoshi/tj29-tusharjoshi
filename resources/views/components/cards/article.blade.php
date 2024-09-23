@@ -19,7 +19,7 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
 
 <!-- Content -->
 <div
-    class="order-1 mt-5 w-full px-2 sm:mt-0 sm:max-w-sm sm:pl-0 sm:pr-5 lg:order-2 lg:mt-4 xl:ml-5 xl:mt-0 xl:flex-1"
+    class="order-1 mt-5 w-full px-2 sm:mt-0 sm:max-w-sm sm:ps-0 sm:pr-5 lg:order-2 lg:mt-4 xl:ms-5 xl:mt-0 xl:flex-1"
 >
     <a
     href="{{ url('/projects/'.Str::of($article['category'])->lower()) }}"

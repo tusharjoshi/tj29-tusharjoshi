@@ -17,7 +17,7 @@
     <section class="bg-gray-50 dark:bg-gray-700 py-12 sm:py-20 lg:py-24">
         <!-- Conatiner -->
         <div
-          class="mx-auto max-w-xl px-4 sm:px-12 md:max-w-3xl lg:max-w-screen-xl lg:px-8"
+          class="ms-auto max-w-xl px-4 sm:px-12 md:max-w-3xl lg:max-w-screen-xl lg:px-8"
         >
           <div
             class="flex w-full flex-col items-center md:flex-row md:justify-between"
@@ -41,7 +41,7 @@
                 </div>
               </div>
 
-              <div class="mt-6 text-center md:ml-5 md:mt-0 md:text-left">
+              <div class="mt-6 text-center md:ms-5 md:mt-0 md:text-left">
                 <p class="text-xs uppercase tracking-widest text-red-700 dark:text-red-300">
                   {{ __('Recent in') }}
                 </p>
@@ -82,7 +82,7 @@
 
       <!-- Primary Feed -->
       <section
-        class="relative mx-auto max-w-xl px-5 py-12 sm:px-12 sm:py-16 md:max-w-3xl lg:max-w-screen-xl lg:px-8 lg:py-20"
+        class="relative ms-auto max-w-xl px-5 py-12 sm:px-12 sm:py-16 md:max-w-3xl lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
         <div class="w-full lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12">
           <!-- Articles -->
@@ -94,7 +94,7 @@
 
           <!-- Sidebar -->
           <div
-            class="mx-auto mt-12 w-full max-w-xl sm:mt-16 md:max-w-3xl lg:col-span-1 lg:mt-0 lg:max-w-none"
+            class="ms-auto mt-12 w-full max-w-xl sm:mt-16 md:max-w-3xl lg:col-span-1 lg:mt-0 lg:max-w-none"
           >
             <!-- Most read articles -->
             <div class="w-full rounded-2xl bg-gray-50 dark:bg-gray-800 p-5 sm:p-8">
@@ -108,7 +108,7 @@
               <div class="space-y-6 pt-6 sm:space-y-5 lg:space-y-6 xl:space-y-5">
                 <!-- 1st Article -->
                 @foreach (config('info.articles') as $sideindex => $sidearticle)
-                <article class="flex space-x-4 sm:space-x-6 lg:space-x-4">
+                <article class="flex space-s-4 sm:space-s-6 lg:space-s-4">
                   <!-- Image -->
                   <a
                     href="{{ url('/blog/' . $sideindex) }}"
@@ -170,7 +170,7 @@
                     <li>
                       <a href="{{ url('/tag' . '/' .$tag['id']) }}">
                         <span
-                          class="m-1 inline-flex items-center rounded-full border border-gray-300/70 bg-transparent px-4 py-1 text-sm font-medium text-gray-800 dark:text-gray-400 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200 sm:px-4 sm:py-1.5"
+                          class="m-1 inline-flex items-center rounded-full border border-gray-300/70 bg-transparent ps-4 py-1 text-sm font-medium text-gray-800 dark:text-gray-400 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200 sm:px-4 sm:py-1.5"
                         >
                           {{ $tag['name'] }}
                         </span>
@@ -208,10 +208,10 @@
 
                         <div class="relative col-span-3 flex flex-col flex-wrap">
                         <div
-                            class="box-border flex w-full flex-1 flex-col justify-between px-6 md:px-0"
+                            class="box-border flex w-full flex-1 flex-col justify-between ps-6 md:ps-0"
                         >
                             <div
-                            class="transition-color relative z-10 ml-3 text-base font-medium text-gray-700 dark:text-gray-300 duration-300 ease-in-out group-hover:text-red-600 dark:hover:text-red-200"
+                            class="transition-color relative z-10 ms-3 text-base font-medium text-gray-700 dark:text-gray-300 duration-300 ease-in-out group-hover:text-red-600 dark:hover:text-red-200"
                             >
                             {{ __($link['title']) }}
                             </div>
@@ -225,7 +225,7 @@
                     </a>
                     @if (!($loop->last))
                     <hr
-                    class="my-2.5 ml-13 w-full border-t border-dashed border-gray-300/70"
+                    class="my-2.5 ms-13 w-full border-t border-dashed border-gray-300/70"
                     />
                     @endif
                   @endforeach
